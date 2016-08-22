@@ -1,0 +1,16 @@
+' Gambas class file
+
+Inherits Task
+Public ii As Integer
+
+Public Sub Main()
+  
+  Do
+    Inc ii
+    
+    Print ii
+    Wait 1
+    
+  Loop
+  
+End

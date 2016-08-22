@@ -1,0 +1,12 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,68,59)
+  { Button1 Button
+    MoveScaled(37,21,22,20)
+    Text = ("Exit")
+  }
+  { Button2 Button
+    MoveScaled(10,24,17,18)
+  }
+}

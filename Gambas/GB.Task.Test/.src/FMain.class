@@ -1,0 +1,25 @@
+' Gambas class file
+
+Private hTask As MyTask
+
+
+Public Sub Button1_Click()
+
+  hTask.Stop
+  hTask = Null
+'   Me.Close()
+
+End
+
+Public Sub SomeTask_Read(Data As String)
+
+  Print Data
+
+End
+
+
+Public Sub Button2_Click()
+  If hTask = Null Then hTask = New MyTask As "SomeTask"
+'   Print hTask.Handle;; hTask.Value
+'    hTask.Main()
+End
