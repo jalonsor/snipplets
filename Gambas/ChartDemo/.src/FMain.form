@@ -1,0 +1,9 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,103,59)
+  Arrangement = Arrange.Fill
+  { DrawingArea1 DrawingArea
+    MoveScaled(7,6,94,47)
+  }
+}

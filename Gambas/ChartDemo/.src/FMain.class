@@ -1,0 +1,26 @@
+' Gambas class file
+
+Private hChart As Chart
+Public Sub _new()
+ hChart = New Chart
+ 
+ hChart.Headers.Values = ["Tic", " Tac ", " Toe ", "Pif", "Paf", "Pouf"]
+ hChart[0].Values = [1.0, 2.0, 8.0, 6.0, 10, 3.0]
+ hChart[0].Text = "Values"
+ 
+ hChart.Type = ChartType.Lines
+ hChart.YAxe.ShowIntervalLines = False
+ hChart.Legend.Position = Align.Right
+ hChart.Legend.Visible = True
+ hChart.Legend.Title = "Legend"
+End
+
+Public Sub Form_Open()
+
+End
+
+Public Sub DrawingArea1_Draw()
+  hChart.Width = Draw.Width
+  hChart.Height = Draw.Height
+  hChart.Draw()
+End
